@@ -5,6 +5,15 @@ function allCaps() {
   return caps;
 }
 
+//For browser (AKA not for Jest testing)
+if (typeof document !== "undefined") {
+  document.addEventListener("DOMContentLoaded", () => {
+    const button = document.querySelector("#capsButton");
+    if (button) {
+      button.addEventListener("click", allCaps);
+    }
+  });
+}
 
 // Export 
  module.exports = allCaps;
