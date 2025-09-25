@@ -1,0 +1,14 @@
+{
+  "name": "simple-jest-test",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.1.3",
+    "jest-environment-jsdom": "^30.1.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
